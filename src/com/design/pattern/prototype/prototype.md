@@ -1,6 +1,6 @@
 ### Prototype Design Pattern
 
-Prototype design pattern ကို costly ဖြစ်တဲ့ resource(eg DB group by fetch) တွေကိုထပ်ခါထပ်ခါမလုပ်စေပဲ တစ်ခါဆွဲပြီး property တွေကို set ပြီးတာနဲ့ ထပ်မဆွဲတော့ပဲ clone လုပ်ပြီးသက်သာအောင်လုပ်လို့ရတဲ့ design pattern တစ်ခုဖြစ်ပါတယ်။
+Prototype design pattern ကို costly ဖြစ်တဲ့ resource တွေကို ဆွဲယူတဲ့အခါ ထပ်ခါထပ်ခါမလုပ်စေပဲ တစ်ခါဆွဲပြီး property တွေကို set ပြီးတာနဲ့ ထပ်မဆွဲတော့ပဲ clone လုပ်ထားလို့ရတဲ့ performance optimizing design pattern တစ်ခုဖြစ်ပါတယ်။
 
 Java မှာဆိုရင်တော့ Cloneable interface ရှိပြီး implements လုပ်ထားတဲ့ class မှာ Object.clone() ကိုခေါ်စေပြီး property တွေကို copy ကူးထားတဲ့ ထပ်တူညီတဲ့ object တစ်ခုကိုပြန်ထုတ်ပေးမှာဖြစ်ပါတယ်။
 
