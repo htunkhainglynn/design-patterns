@@ -1,8 +1,8 @@
 ### Prototype Design Pattern
 
-Prototype design pattern ကို costly ဖြစ်တဲ့ resource တွေကို ဆွဲယူတဲ့အခါ ထပ်ခါထပ်ခါမလုပ်စေပဲ တစ်ခါဆွဲပြီး property တွေကို set ပြီးတာနဲ့ ထပ်မဆွဲတော့ပဲ clone လုပ်ထားလို့ရတဲ့ performance optimizing design pattern တစ်ခုဖြစ်ပါတယ်။
+Prototype design pattern ဟာ costly ဖြစ်တဲ့ resource တွေကို ဆွဲယူတဲ့အခါ ထပ်ခါထပ်ခါမလုပ်စေပဲ တစ်ခါဆွဲပြီး property တွေကို set ပြီးတာနဲ့ ထပ်မဆွဲတော့ပဲ clone လုပ်ပြီး performance optimizing လုပ်လို့ရတဲ့ design pattern တစ်ခုဖြစ်ပါတယ်။
 
-Java မှာဆိုရင်တော့ Cloneable interface ရှိပြီး implements လုပ်ထားတဲ့ class မှာ Object.clone() ကိုခေါ်စေပြီး property တွေကို copy ကူးထားတဲ့ ထပ်တူညီတဲ့ object တစ်ခုကိုပြန်ထုတ်ပေးမှာဖြစ်ပါတယ်။
+Java မှာဆိုရင်တော့ Cloneable interface ရှိပြီး implements လုပ်ထားတဲ့ class မှာ Object.clone() ကိုခေါ်လိုက်ရင် property တွေကို copy ကူးထားတဲ့ ထပ်တူညီတဲ့ object တစ်ခုကိုပြန်ထုတ်ပေးမှာဖြစ်ပါတယ်။
 
 ```agsl
 package com.design.pattern.prototype;
@@ -62,4 +62,4 @@ public class PrototypeTest {
 }
 ```
 
-ဒီ code ကို run ကြည့်ရင်တော့ နောက်တစ်ခါ output ထုတ်ရင် 2 seconds မစောင့်ရပဲ ချက်ချင်းထွက်လာမှာဖြစ်ပါတယ်။
+ဒီ code ကို run ကြည့်ရင်တော့ ဒုတိယ output ထုတ်ရင် 2 seconds မစောင့်ရပဲ ချက်ချင်းထွက်လာမှာဖြစ်ပါတယ်။
