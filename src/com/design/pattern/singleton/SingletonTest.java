@@ -1,4 +1,4 @@
-package com.design.pattern.skeleton;
+package com.design.pattern.singleton;
 
 import org.junit.jupiter.api.Test;
 
