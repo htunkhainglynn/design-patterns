@@ -1,0 +1,2 @@
+## Strategy Pattern
+လွယ်ပါတယ်သူကတော့ code ထဲက ဥပမာအတိုင်းပါပဲ Polymorphism သာမသုံးဘူးဆိုရင် payment လုပ်ချင်တဲ့အခါ if else နဲ့ hard code လုပ်ပြီးဖြေရှင်းနေရမှာဖြစ်ပါတယ်။ Strategy Pattern သာသုံးလိုက်ရင် hard code လုပ်စရာမလိုတော့သလို Open Close Principle ကိုလဲ လိုက်နာသွားစေပါတယ်။
