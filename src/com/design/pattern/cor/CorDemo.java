@@ -8,7 +8,14 @@ public class CorDemo {
         // create jwt filter
         Filter jwtFilter = new JwtFilter();
 
-        usernamePasswordAuthenticationFilter.setNextFilter(jwtFilter);
-        usernamePasswordAuthenticationFilter.doFilter("username", "password");
+        // create filter chain
+        FilterChain filterChain = new FilterChain();
+        filterChain.addFilter(usernamePasswordAuthenticationFilter);
+        filterChain.addFilter(jwtFilter);
+
+        // create dispatcher servlet
+        DispatcherServlet dispatcherServlet = new DispatcherServlet(filterChain.getFilterChain());
+
+        dispatcherServlet.request("admin", "admin");
     }
 }

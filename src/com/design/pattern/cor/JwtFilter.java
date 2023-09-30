@@ -7,7 +7,7 @@ public class JwtFilter extends Filter {
         if (this.getNextFilter() != null) {
             this.getNextFilter().doFilter(username, password);
         } else {
-            new DispatcherServlet(username, password).doDispatch();
+            DispatcherServlet.doDispatch(username, password);
         }
     }
 }
