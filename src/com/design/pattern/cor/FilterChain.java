@@ -15,6 +15,8 @@ public class FilterChain {
         if (filters.isEmpty()) {
             return null;
         }
+
+        // chain all filters
         Filter filter = filters.get(0);
         for (int i = 1; i < filters.size(); i++) {
             filter.setNextFilter(filters.get(i));
